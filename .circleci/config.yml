@@ -1,0 +1,10 @@
+version: 2.1
+executors:
+  exectr:
+    docker:
+      - image: premsekhar/dockercppintroproject:latest
+jobs:
+  build:
+    executor: exectr
+    steps:
+      - checkout
